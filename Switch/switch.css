@@ -1,0 +1,28 @@
+/* You sould have nothing to change but the dimensions, colors and transitions. All the style is in the CSS file for better maintenance*/
+
+.switch{
+    width: 34px; /* change your switch's dimensions */
+    height: 14px; 
+    padding: 3px;
+
+    border-radius: 20px; 
+     
+    background-color: #757575; 
+    transition: ease-in-out 0.2s;
+}
+
+.switch .circle{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    background-color: white;
+    transition: ease-in-out 0.2s;
+}
+
+.toggled{
+    transform: translateX(calc(34px - 100%)); /* 34px is the width of the switch, replace it with your component's width */
+}
+
+.switchToggled{
+    background-color: #A445ED;
+}
